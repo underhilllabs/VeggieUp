@@ -1,4 +1,5 @@
 class ServingsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
   before_action :set_serving, only: [:show, :edit, :update, :destroy]
 
   # GET /servings
@@ -69,6 +70,6 @@ class ServingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def serving_params
-      params.require(:serving).permit(:day, :category, :food_item, :notes)
+      params.require(:serving).permit(:day, :serving_category_id, :food_item_id, :notes)
     end
 end
