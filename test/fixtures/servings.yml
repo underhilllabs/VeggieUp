@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2019-10-17
+  category: 1
+  food_item: 1
+  notes: MyText
+
+two:
+  day: 2019-10-17
+  category: 1
+  food_item: 1
+  notes: MyText

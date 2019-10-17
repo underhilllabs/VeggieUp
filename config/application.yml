@@ -1,0 +1,9 @@
+TEST_DB_HOST: '127.0.0.1'
+TEST_DB: "veggieup_test"
+TEST_DB_USER: "veggieup_test"
+TEST_DB_PASSWORD: "23skidoo99!"
+DEV_DB_HOST: '127.0.0.1'
+DEV_DB: "veggieup_dev"
+DEV_DB_USER: "veggieup"
+DEV_DB_PASSWORD: "23skidoo99!"
+DEV_DB_ADAPTER: postgresql

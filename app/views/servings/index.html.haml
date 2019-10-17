@@ -1,0 +1,27 @@
+%h1 Listing servings
+
+%table
+  %thead
+    %tr
+      %th Day
+      %th Category
+      %th Food item
+      %th Notes
+      %th
+      %th
+      %th
+
+  %tbody
+    - @servings.each do |serving|
+      %tr
+        %td= serving.day
+        %td= serving.category
+        %td= serving.food_item
+        %td= serving.notes
+        %td= link_to 'Show', serving
+        %td= link_to 'Edit', edit_serving_path(serving)
+        %td= link_to 'Destroy', serving, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Serving', new_serving_path

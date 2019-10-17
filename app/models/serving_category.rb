@@ -1,0 +1,2 @@
+class ServingCategory < ApplicationRecord
+end

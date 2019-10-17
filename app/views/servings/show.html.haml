@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Day:
+  = @serving.day
+%p
+  %b Category:
+  = @serving.category
+%p
+  %b Food item:
+  = @serving.food_item
+%p
+  %b Notes:
+  = @serving.notes
+
+= link_to 'Edit', edit_serving_path(@serving)
+\|
+= link_to 'Back', servings_path

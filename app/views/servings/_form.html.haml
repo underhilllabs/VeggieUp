@@ -1,0 +1,22 @@
+= form_for @serving do |f|
+  - if @serving.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@serving.errors.count, "error")} prohibited this serving from being saved:"
+      %ul
+        - @serving.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :day
+    = f.date_select :day
+  .field
+    = f.label :category
+    = f.number_field :category_id
+  .field
+    = f.label :food_item
+    = f.number_field :food_item_id
+  .field
+    = f.label :notes
+    = f.text_area :notes
+  .actions
+    = f.submit 'Save'
